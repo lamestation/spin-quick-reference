@@ -1,11 +1,10 @@
 = Functions
 
-== Things you can do to a function
+The first function in an object is where your program starts.
 
-=== Make it public
+== Public and Private
 
 Functions in Spin can be public or private.
-
 
 - A public function can be used by other objects that include this one.
 +
@@ -19,7 +18,9 @@ PUB MyFunction
 PRI MyFunction
 ----
 
-=== Add parameters
+All Spin objects must have at least one public function.
+
+== Parameters
 
 Sometimes you may want to pass inputs to functions to make them do different things. A good example of this is a function that draws rectangles of different sizes, or one that plays different musical notes. You can do this by adding parameters in parentheses (`'('`,  `')'`).
 
@@ -35,7 +36,7 @@ Or many, separated with commas:
 PUB Rectangle(x, y, w, h)
 ----
 
-=== Return a value
+== Return values
 
 Often when you call a function, you want to calculate a value or obtain a result from it. When a function is called, it will return a value to its calling function.
 
@@ -45,7 +46,7 @@ Often when you call a function, you want to calculate a value or obtain a result
 
 In Spin, there are two ways to specify a result from a function.
 
-==== With `return`
+=== Using `return`
 
 At any time in a function, you may call `return` with a value.
 
@@ -57,7 +58,7 @@ This will cause the function to return immediately.
 
 If no value is passed to `return`, `0` is returned.
 
-==== With `result`
+=== Using `result`
 
 `result` is a special variable that holds the value to be returned when the function exits. It defaults to `0`.
 
@@ -73,7 +74,7 @@ PUB MyFunction : myresult
     myresult := 234
 ----
 
-=== Add local variables
+== Local variables
 
 You may want to add variables for your function to use that aren't visible to the rest of the program. You can add some by typing `|` followed by a list of variables to declare. These will be long-sized values.
 
