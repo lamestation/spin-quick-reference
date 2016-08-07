@@ -2,10 +2,15 @@
 
 * [Introduction](README.adoc)
 * [Basics](basics.adoc)
-    * [Comments](comments.adoc)
+  * [Comments](comments.adoc)
+
 * [Functions](functions.adoc)
 * [Objects](objects.adoc)
 * [Operators](operators.adoc)
-* [Arrays](arrays.adoc)
-* [Strings](strings.adoc)
+* [Data Types](data-types.adoc)
+  * Integers
+  * Floats
+  * [Arrays](arrays.adoc)
+  * [Strings](strings.adoc)
+
 
