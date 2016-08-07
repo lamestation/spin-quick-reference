@@ -6,9 +6,7 @@
 
 == Blocks
 
-A feature unique to Spin is the use of _blocks_. Objects can contain six kinds of blocks: `CON`, `VAR`, `PUB`, `PRI`, `OBJ`, and `DAT`. Each block has its own syntax and allowed keywords, like mini-languages in their own right.
-
-
+A feature unique to Spin is the use of _blocks_. Objects can contain six kinds of blocks: `CON`, `VAR`, `PUB`, `PRI`, `OBJ`, and `DAT`. Each block has its own syntax and allowed keywords, like little mini-languages of their own.
 
 == Constants
 
