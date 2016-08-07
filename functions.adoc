@@ -1,0 +1,78 @@
+= Functions
+
+== Things you can do to a function
+
+=== Make it public
+
+Functions in Spin can be public or private.
+
+
+- A public function can be used by other objects that include this one.
++
+----
+PUB MyFunction
+----
+
+- A private function can only be used inside the current object.
++
+----
+PRI MyFunction
+----
+
+=== Add parameters
+
+Sometimes you may want to pass inputs to functions to make them do different things. A good example of this is a function that draws rectangles of different sizes, or one that plays different musical notes. You can do this by adding parameters in parentheses (`'('`,`')'`).
+
+You can add one parameter:
+
+----PUB Fill(color)----
+
+Or many, separated with commas:
+
+----PUB Rectangle(x, y, w, h)----
+
+== Return a value
+
+Often when you call a function, you want to calculate a value or obtain a result from it. When a function is called, it will return a value to its calling function.
+
+---- variable := MyFunction----
+
+In Spin, there are two ways to specify a result from a function.
+
+=== With `return`
+
+At any time in a function, you may call `return` with a value.
+
+----PUB MyFunction return 234 ----
+
+This will cause the function to return immediately.
+
+If no value is passed to `return`, `0` is returned.
+
+=== With `result`
+
+`result` is a special variable that holds the value to be returned when the function exits. It defaults to `0`.
+
+----PUB MyFunction result := 234----
+
+You can alias `result` with your own name by adding a `:` followed by the new name to the function definition.
+
+----PUB MyFunction : myresult myresult := 234----
+
+== Add local variables
+
+You may want to add variables for your function to use that aren't visible to the rest of the program. You can add some by typing `|` followed by a list of variables to declare. These will be long-sized values.
+
+----PUB MyFunction | var1, var2, var3----
+
+They are not initialized, so if you need them to be, you have to do it yourself.
+
+----PUB MyFunction | var1, var2, var3 var1 := 0 var2 := 0 var3 := 0----
+
+If you want to add both a result alias and local variables, you must add the result alias first.
+
+----PUB MyFunction : myresult | myvar myresult := 234----
+
+get SDK browser
+
+Spin is so simple! I've been stuck with unity, but every time we want to do something on unity, first we have to call the script name, then attach to an object, then search for an object, then grab the component of the script
