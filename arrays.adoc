@@ -1,0 +1,16 @@
+== Arrays
+
+Spin supports arrays, which store multiple variables as a unit. The size of the array must be declared in advance, with either an integer or a constant defined in a `CON` block.
+
+----
+VAR
+ byte donuts[12]
+ byte donuts[DOZEN]
+----
+
+You can access the values in arrays with `[]` notation.
+
+----
+x := donuts[4]
+donuts[6] := 27
+----
