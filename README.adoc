@@ -41,22 +41,6 @@ VAR
 
 
 
-=== Strings
-
-A string is an array of bytes that is _null-terminated_, or ends in zero.
-
-You can create strings on the fly and use them right away with the `string` keyword.
-
-----
-string("Hello world!")
-----
-
-Strings can also be declared in `DAT` blocks for reuse, then used with their address.
-
-----
-hellostring     byte    "Hello world!",0
-----
-
 == Flow Control
 
 === Indentation

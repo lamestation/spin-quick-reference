@@ -7,4 +7,5 @@
 * [Objects](objects.adoc)
 * [Operators](operators.adoc)
 * [Arrays](arrays.adoc)
+* [Strings](strings.adoc)
 
