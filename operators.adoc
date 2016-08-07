@@ -1,4 +1,4 @@
-== Operators
+= Operators
 
 The `=` operator sets the value of a constant.
 
@@ -12,7 +12,7 @@ The `:=` operator sets the value of a variable.
 x := 5
 ----
 
-=== Arithmetic Operators
+== Arithmetic Operators
 
 You can use basic arithmetic operations.
 
@@ -43,7 +43,7 @@ x++
 x--
 ----
 
-=== Relational Operators
+== Relational Operators
 
 A _relational operator_ tests the relationship between two values. Expressions that use them return a non-zero number if true, or zero if false.
 
@@ -63,7 +63,7 @@ x =< y ' x is equal to or less than y
 x => y ' x is equal to or greater than y
 ----
 
-=== Logical Operators
+== Logical Operators
 
 Logical operators, or *boolean operators* allow you to create more specific tests in your application.
 
