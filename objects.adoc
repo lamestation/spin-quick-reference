@@ -1,0 +1,32 @@
+= Objects
+
+A file in Spin is called an _object_, and ends with the `.spin` extension.
+
+An object can be written as the main program, or as a _library_ that can be used by other objects.
+
+External objects are declared in an `OBJ` block, and given a unique alias.
+
+----
+OBJ
+ ser : "LameSerial"
+----
+
+Multiple copies of an object can be used.
+
+----
+ ser1 : "LameSerial"
+ ser2 : "LameSerial"
+----
+
+Or an array of objects
+
+----
+ ser[4] : "LameSerial"
+----
+
+These can be accessed with brackets.
+
+----
+PUB Foo
+ ser[4].Char("b")
+----
