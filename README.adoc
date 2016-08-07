@@ -222,11 +222,3 @@ All loops in Spin use the `REPEAT` command.
 
 
 == Data
-
-== Functions
-
-Functions
-
-The first function in an object is 
-
-All Spin objects must have at least one public function.
