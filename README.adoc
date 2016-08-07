@@ -4,10 +4,6 @@
 
 - Expression - Any combination of symbols that can represent a value.
 
-== Blocks
-
-A feature unique to Spin is the use of _blocks_. Objects can contain six kinds of blocks: `CON`, `VAR`, `PUB`, `PRI`, `OBJ`, and `DAT`. Each block has its own syntax and allowed keywords, like little mini-languages of their own.
-
 == Constants
 
 Constants are named values that cannot change. They work like integers, but if a value is used often enough, using constants makes your code easier to read and modify.
